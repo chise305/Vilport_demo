@@ -13,13 +13,16 @@ $(function(){
 
     jQuery(window).scroll(function () {
         if (jQuery(window).scrollTop() > 400) {
-            jQuery("#navigation").css("background-color","#00C7FC");
+            jQuery("#navigation").css("background-color","#86bf01");
             jQuery("#navigation").addClass("animated-nav");
         } else {
-            jQuery("#navigation").css("background-color","transparent");
+            jQuery("#navigation").css("background-color","#86bf01");
             jQuery("#navigation").removeClass("animated-nav");
         }
     });
+
+    var altura = window.innerHeight;
+    $(".banner .item").height(altura);
 
     $('#nav').onePageNav({
         filter: ':not(.external)',
